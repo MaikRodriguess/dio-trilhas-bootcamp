@@ -1,24 +1,16 @@
 public class Operadores {
     public static void main(String[] args) {
 
-        // classe Operadores.java
-        int a, b;
+        // Operadores.java
+        boolean condicao1=true;
 
-        a = 6;
-        b = 6;
+        boolean condicao2=false;
 
-        // EXEMPLO DE CONDICIONAL UTILIZANDO UMA ESTRUTURA IF/ELSE
-       /* String resultado = "";
-        if(a==b)
-           resultado = "verdadeiro";
-        else
-           resultado = "falso";*/
+        if(condicao1 && (7 > 2))
+            System.out.print("Os dois valores precisam ser verdadeiros\n");;
 
-
-
-        //MESMA CONDICIONAL, MAS DESSA VEZ, UTILIZANDO O OPERADOR CONDICIONAL TERNÁRIO
-        String resultado = (a==b) ? "verdadeiro" : "false";
-
-        System.out.println(resultado);
+        //Se condicao1 OU condicao2 for verdadeira, executar código.
+        if(condicao1 || condicao2)
+            System.out.print("Um dos valores precisa ser verdadeiro");
     }
 }
