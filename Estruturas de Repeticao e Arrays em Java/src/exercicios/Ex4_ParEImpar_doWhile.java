@@ -2,7 +2,7 @@ package exercicios;
 
 import java.util.Scanner;
 
-public class Ex4_ParEImpar {
+public class Ex4_ParEImpar_doWhile {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
