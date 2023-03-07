@@ -2,7 +2,7 @@ package exercicios;
 
 import java.util.Scanner;
 
-public class Ex3_MaiorEMedia {
+public class Ex3_MaiorEMedia_doWhile {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
