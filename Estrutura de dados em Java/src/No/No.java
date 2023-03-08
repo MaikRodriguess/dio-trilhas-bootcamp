@@ -1,3 +1,5 @@
+package No;
+
 public class No<T> {
     private T conteudo;
     private No<T> proximoNo;
@@ -25,7 +27,7 @@ public class No<T> {
 
     @Override
     public String toString() {
-        return "No{" +
+        return "No.No{" +
                 "conteudo='" + conteudo + '\'' +
                 '}';
     }
