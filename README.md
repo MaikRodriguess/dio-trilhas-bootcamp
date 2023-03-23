@@ -1,4 +1,4 @@
 # dio-trilha-java-basico
-Repositório para exemplos do curso de Java Básico pela DIO.
+Este repositório contém exemplos e exercícios do bootcamp de Java oferecido pelo Banco PAN em parceria com a DIO.
 
 📖  [Apostila para consulta](https://glysns.gitbook.io/java-basico)
