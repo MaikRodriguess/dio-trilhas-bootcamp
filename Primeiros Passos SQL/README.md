@@ -15,7 +15,7 @@
 
 * Numericos:
 
-TINYINT (inteiro) -127 a 127
+TINYINT (inteiro) -127 a 127 
 SMALLINT (inteiro) -32768 a 32767
 MEDIUMINT (inteiro) -8388608 a 8388607
 INT (inteiro) -2147483648 a 2147483647
