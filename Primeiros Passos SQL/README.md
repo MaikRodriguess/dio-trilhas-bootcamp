@@ -1,4 +1,4 @@
-## Primeiros Passos com SQL
+## Anotações e scrips do módulo
 
 ### Classificações:
 * **DDL (Data Definition Language)**: São comandos utilizados para definir a estrutura do banco de dados, como a criação, alteração e exclusão de tabelas, índices, visões, procedimentos armazenados, entre outros. Exemplos: CREATE, ALTER, DROP, RENAME, etc.
