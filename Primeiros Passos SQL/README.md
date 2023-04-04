@@ -1,6 +1,6 @@
-## Anotações e scrips do módulo
+# Anotações e scrips do módulo
 
-### Classificações:
+## Classificações:
 * **DDL (Data Definition Language)**: São comandos utilizados para definir a estrutura do banco de dados, como a criação, alteração e exclusão de tabelas, índices, visões, procedimentos armazenados, entre outros. Exemplos: CREATE, ALTER, DROP, RENAME, etc.
 
 * **DML (Data Manipulation Language)**: São comandos utilizados para manipular os dados dentro das tabelas do banco de dados, como a inserção, atualização e exclusão de registros. Exemplos: INSERT, UPDATE, DELETE, etc.
@@ -11,51 +11,52 @@
 
 * **TCL (Transaction Control Language)**: São comandos utilizados para gerenciar transações dentro do banco de dados, incluindo o início, confirmação ou reversão de transações. Exemplos: COMMIT, ROLLBACK, SAVEPOINT, etc.
 
-### Tipos de Dados:
+## Tipos de Dados:
 
-* Numericos:
+### Numericos:
 
-TINYINT (inteiro) -127 a 127 
-SMALLINT (inteiro) -32768 a 32767
-MEDIUMINT (inteiro) -8388608 a 8388607
-INT (inteiro) -2147483648 a 2147483647
-BIGINT (inteiro) -9223372036854775808 a 9223372036854775807
-FLOAT (decimal) -3.402823466E+38 a -1.175494351E-38 ou 0 a 1.175494351E-38 a 3.402823466E+38
-DOUBLE (decimal) -1.7976931348623157E+308 a -2.2250738585072014E-308 ou 0 a 2.2250738585072014E-308 a 1.7976931348623157E+308
-DECIMAL (decimal) -10^38 +1 a 10^38 -1
+- TINYINT (inteiro) -127 a 127 
+- SMALLINT (inteiro) -32768 a 32767
+- MEDIUMINT (inteiro) -8388608 a 8388607
+- INT (inteiro) -2147483648 a 2147483647
+- BIGINT (inteiro) -9223372036854775808 a 9223372036854775807
+- FLOAT (decimal) -3.402823466E+38 a -1.175494351E-38 ou 0 a 1.175494351E-38 a 3.402823466E+38
+- DOUBLE (decimal) -1.7976931348623157E+308 a -2.2250738585072014E-308 ou 0 a 2.2250738585072014E-308 a 1.7976931348623157E+308
+- DECIMAL (decimal) -10^38 +1 a 10^38 -1
 
-* Temporais:
+### Temporais:
 
-DATE (data) '1000-01-01' a '9999-12-31'
-TIME (horário) '-838:59:59' a '838:59:59'
-DATETIME (data e horário) '1000-01-01 00:00:00' a '9999-12-31 23:59:59'
-TIMESTAMP (data e horário) '1970-01-01 00:00:01' UTC a '2038-01-19 03:14:07' UTC
+* DATE (data) '1000-01-01' a '9999-12-31'
+* TIME (horário) '-838:59:59' a '838:59:59'
+* DATETIME (data e horário) '1000-01-01 00:00:00' a '9999-12-31 23:59:59'
+* TIMESTAMP (data e horário) '1970-01-01 00:00:01' UTC a '2038-01-19 03:14:07' UTC
 
-* Texto:
+### Texto:
 
-CHAR (caracteres fixos) 0 a 255 caracteres
-VARCHAR (caracteres variáveis) 0 a 65535 caracteres
-TINYTEXT (texto curto) 0 a 255 caracteres
-TEXT (texto) 0 a 65535 caracteres
-MEDIUMTEXT (texto longo) 0 a 16777215 caracteres
-LONGTEXT (texto muito longo) 0 a 4294967295 caracteres
+* CHAR (caracteres fixos) 0 a 255 caracteres
+* VARCHAR (caracteres variáveis) 0 a 65535 caracteres
+* TINYTEXT (texto curto) 0 a 255 caracteres
+* TEXT (texto) 0 a 65535 caracteres
+* MEDIUMTEXT (texto longo) 0 a 16777215 caracteres
+* LONGTEXT (texto muito longo) 0 a 4294967295 caracteres
 
-* Binário:
+### Binário:
 
-BINARY (binário fixo) 0 a 255 bytes
-VARBINARY (binário variável) 0 a 65535 bytes
-TINYBLOB (dados binários curtos) 0 a 255 bytes
-BLOB (dados binários) 0 a 65535 bytes
-MEDIUMBLOB (dados binários longos) 0 a 16777215 bytes
-LONGBLOB (dados binários muito longos) 0 a 4294967295 bytes
-Outros:
+* BINARY (binário fixo) 0 a 255 bytes
+* VARBINARY (binário variável) 0 a 65535 bytes
+* TINYBLOB (dados binários curtos) 0 a 255 bytes
+* BLOB (dados binários) 0 a 65535 bytes
+* MEDIUMBLOB (dados binários longos) 0 a 16777215 bytes
+* LONGBLOB (dados binários muito longos) 0 a 4294967295 bytes
 
-ENUM (lista de valores) lista de até 65535 valores
-SET (conjunto de valores) até 64 membros
+### Outros:
+
+* ENUM (lista de valores) lista de até 65535 valores
+* SET (conjunto de valores) até 64 membros
 
 
 
-### Comandos básicos:
+## Comandos básicos:
 * `CREATE DATABASE nomeDoBanco;` - Cria um banco de dados
 
 * `SHOW DATABASES;` - Mostra todos os bancos criados
@@ -69,44 +70,44 @@ SET (conjunto de valores) até 64 membros
 * `CONSTRAINT pk_person PRIMARY KEY (person_id) - ` Define uma chave primaria. *Essa linha cria uma constraint (restrição) na tabela person, chamada pk_person (podendo ser qualquer nome válido), que define a coluna person_id como chave primária (PRIMARY KEY) da tabela INSERT*
 * `Desc NomeDeTabela` - Descreve a estrutura de uma tabela
 
-* `INSERT INTO - Insere valores em tabela`.
-1. Inserindo valores fixos em todas as colunas:
+#### INSERT INTO
+* Inserindo valores fixos em todas as colunas:
     `INSERT INTO tabela (coluna1, coluna2, coluna3) VALUES (valor1, valor2, valor3);` 
 
-2. Inserindo valores em algumas colunas, e deixando outras com valor nulo:
+* Inserindo valores em algumas colunas, e deixando outras com valor nulo:
 `INSERT INTO tabela (coluna1, coluna3) VALUES (valor1, valor3);`
 
-3. Inserindo valores de outra tabela:
+* Inserindo valores de outra tabela:
 `INSERT INTO tabela_destino (coluna1, coluna2, coluna3)`
 `SELECT coluna1, coluna2, coluna3 FROM tabela_origem;`
 
-4. Inserindo vários valores de uma vez:
+* Inserindo vários valores de uma vez:
 `INSERT INTO tabela (coluna1, coluna2, coluna3) VALUES (valor1, valor2, valor3), (valor4, valor5, valor6), (valor7, valor8, valor9);`
 
-5. Inserindo valores de uma subquery:
+* Inserindo valores de uma subquery:
 `INSERT INTO tabela (coluna1, coluna2, coluna3)`
 `SELECT coluna1, coluna2, coluna3 FROM outra_tabela WHERE coluna4 = valor;`
 
 * `DELETE FROM nomeTabela WHERE nomeColuna = valorColuna` - Deleta valores onde a coluna é igual ao valor sugerido. 
 
-* ALTER TABLE:
+#### ALTER TABLE:
 
-1. `ALTER TABLE nomeDaTabela ADD COLUMN nomeDaColuna tipoDeDado` - Adiciona uma nova coluna à tabela especificada.
+* `ALTER TABLE nomeDaTabela ADD COLUMN nomeDaColuna tipoDeDado` - Adiciona uma nova coluna à tabela especificada.
 
-2. `ALTER TABLE nomeDaTabela DROP COLUMN nomeDaColuna` - Remove uma coluna da tabela especificada.
+* `ALTER TABLE nomeDaTabela DROP COLUMN nomeDaColuna` - Remove uma coluna da tabela especificada.
 
-3. `ALTER TABLE nomeDaTabela MODIFY COLUMN nomeDaColuna novoTipoDeDado` - Altera o tipo de dados de uma coluna existente na tabela especificada.
+* `ALTER TABLE nomeDaTabela MODIFY COLUMN nomeDaColuna novoTipoDeDado` - Altera o tipo de dados de uma coluna existente na tabela especificada.
 
-3. `ALTER TABLE nomeDaTabela RENAME TO novoNomeDaTabela` - Altera o nome da tabela especificada.
+3* `ALTER TABLE nomeDaTabela RENAME TO novoNomeDaTabela` - Altera o nome da tabela especificada.
 
-* UPDATE:
+#### UPDATE:
 
-1. `UPDATE nomeDaTabela SET nomeDaColuna = valor WHERE condição` - Atualiza os valores de uma ou mais colunas da tabela especificada, com base em uma determinada condição.
+* `UPDATE nomeDaTabela SET nomeDaColuna = valor WHERE condição` - Atualiza os valores de uma ou mais colunas da tabela especificada, com base em uma determinada condição.
 
-2. `UPDATE nomeDaTabela SET nomeDaColuna1 = valor1, nomeDaColuna2 = valor2 WHERE condição` - Atualiza os valores de duas ou mais colunas da tabela especificada, com base em uma determinada condição.
+* `UPDATE nomeDaTabela SET nomeDaColuna1 = valor1, nomeDaColuna2 = valor2 WHERE condição` - Atualiza os valores de duas ou mais colunas da tabela especificada, com base em uma determinada condição.
 
-* RENAME:
+#### RENAME:
 
-1. `RENAME TABLE nomeDaTabela TO novoNomeDaTabela` - Altera o nome da tabela especificada.
+* `RENAME TABLE nomeDaTabela TO novoNomeDaTabela` - Altera o nome da tabela especificada.
 
-2. `RENAME COLUMN nomeDaTabela.nomeDaColuna TO novoNomeDaColuna` - Altera o nome de uma coluna na tabela especificada.
+* `RENAME COLUMN nomeDaTabela.nomeDaColuna TO novoNomeDaColuna` - Altera o nome de uma coluna na tabela especificada.
