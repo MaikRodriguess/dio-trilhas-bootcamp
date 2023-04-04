@@ -66,8 +66,7 @@ SET (conjunto de valores) até 64 membros
 
 * `nomeDecoluna VARCHAR(20)` - Cria uma variavel texto com tamanho maximo de 20 caracteres
 
-* `CONSTRAINT pk_person PRIMARY KEY (person_id) - ` Define uma chave primaria. *Essa linha cria uma constraint (restrição) na tabela person, chamada pk_person (podendo ser qualquer nome válido), que define a coluna person_id como chave primária (PRIMARY KEY) da tabela*
-INSERT
+* `CONSTRAINT pk_person PRIMARY KEY (person_id) - ` Define uma chave primaria. *Essa linha cria uma constraint (restrição) na tabela person, chamada pk_person (podendo ser qualquer nome válido), que define a coluna person_id como chave primária (PRIMARY KEY) da tabela INSERT*
 * `Desc NomeDeTabela` - Descreve a estrutura de uma tabela
 
 * `INSERT INTO - Insere valores em tabela`.
@@ -89,3 +88,25 @@ INSERT
 `SELECT coluna1, coluna2, coluna3 FROM outra_tabela WHERE coluna4 = valor;`
 
 * `DELETE FROM nomeTabela WHERE nomeColuna = valorColuna` - Deleta valores onde a coluna é igual ao valor sugerido. 
+
+* ALTER TABLE:
+
+1. `ALTER TABLE nomeDaTabela ADD COLUMN nomeDaColuna tipoDeDado` - Adiciona uma nova coluna à tabela especificada.
+
+2. `ALTER TABLE nomeDaTabela DROP COLUMN nomeDaColuna` - Remove uma coluna da tabela especificada.
+
+3. `ALTER TABLE nomeDaTabela MODIFY COLUMN nomeDaColuna novoTipoDeDado` - Altera o tipo de dados de uma coluna existente na tabela especificada.
+
+3. `ALTER TABLE nomeDaTabela RENAME TO novoNomeDaTabela` - Altera o nome da tabela especificada.
+
+* UPDATE:
+
+1. `UPDATE nomeDaTabela SET nomeDaColuna = valor WHERE condição` - Atualiza os valores de uma ou mais colunas da tabela especificada, com base em uma determinada condição.
+
+2. `UPDATE nomeDaTabela SET nomeDaColuna1 = valor1, nomeDaColuna2 = valor2 WHERE condição` - Atualiza os valores de duas ou mais colunas da tabela especificada, com base em uma determinada condição.
+
+* RENAME:
+
+1. `RENAME TABLE nomeDaTabela TO novoNomeDaTabela` - Altera o nome da tabela especificada.
+
+2. `RENAME COLUMN nomeDaTabela.nomeDaColuna TO novoNomeDaColuna` - Altera o nome de uma coluna na tabela especificada.
