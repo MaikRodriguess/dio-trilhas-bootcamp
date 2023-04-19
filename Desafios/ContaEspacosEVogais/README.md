@@ -8,4 +8,5 @@ A entrada será uma frase no formato de string.
 ### Saída
 A saída deverá retornar quantos espaços em branco e quantas vogais existem na determinada string, conforme exemplo abaixo:
 
-Imagem aqui
+<img width="355" alt="ContaEspacosEVogais" src="https://user-images.githubusercontent.com/69226200/233183035-807c50f3-be79-4016-870d-f12c27e83ce6.png">
+
