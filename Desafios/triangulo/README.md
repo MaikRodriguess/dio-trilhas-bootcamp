@@ -15,4 +15,4 @@ A entrada contém três valores reais.
 ### Saída
 O resultado deve ser apresentado com uma casa decimal.
 
-Imagem aqui!
+<img width="347" alt="Triangulo " src="https://user-images.githubusercontent.com/69226200/233115455-2cff3946-2593-4377-b511-c29c367c3149.png">
