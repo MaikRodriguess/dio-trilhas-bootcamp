@@ -16,9 +16,6 @@ public class Triangulo{
         double area;
         double perimetro;
 
-
-//TODO: Implemente a condição necessária para o cálculo do triângulo:
-//Dica: Você pode utilizar o String.format() na formatação do texto
         Triangulo trianguloClass = new Triangulo();
 
             // Caso forme um triangulo
