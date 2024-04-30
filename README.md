@@ -1,6 +1,7 @@
 
 <h1>
-<img align="center" width="60px" src="https://hermes.dio.me/tracks/608ecefd-1d10-42ea-9f58-3e7a4548ab3e.png" alt="Banco PAN Java Developer" class="sc-klSPgc jROXUu">
+            <a href="https://web.dio.me/track/banco-pan-java-developer">
+            <img align="center" width="60px" src="https://hermes.dio.me/tracks/608ecefd-1d10-42ea-9f58-3e7a4548ab3e.png" alt="Banco PAN Java Developer" class="sc-klSPgc jROXUu">
             Banco PAN Java Developer - Bootcamp
 </h1>
 # dio-trilha-java-basico
